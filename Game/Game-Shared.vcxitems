@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{04735107-3ecb-4bb0-986f-ab19fcf6073a}</ItemsProjectGuid>
+    <ItemsProjectName>Game-Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\GameEventTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\RemoveFromSceneEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\CameraObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GamePCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ObjectPool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\OBJLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\VertexFormat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics2D\Box2DContactListener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics2D\Box2DManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\GameEweScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\MeatChunkObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\MeteorObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\ShakeCameraObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\SheepObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\SheepTitleCard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneEwe\Weapon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingMineObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingPlayerObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\CameraObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GamePCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ResourceManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\MeshShapes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\OBJLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics2D\Box2DContactListener.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics2D\Box2DManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\GameEweScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\MeatChunkObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\MeteorObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\ShakeCameraObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\SheepObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\SheepTitleCard.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneEwe\Weapon.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingMineObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingPlayerObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SceneFloatingStuff\FloatingScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneRipple\Ripple.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneRipple\Ripple.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\readme.txt" />
+  </ItemGroup>
+</Project>
